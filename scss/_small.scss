@@ -1,0 +1,52 @@
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	height: 100%;
+	width: 100%;
+}
+/*---- apply a natural box layout model to all elements -------*/
+* {
+	// -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $defaultFont;
+	font-weight: $normalWeight;
+	color: $fontColor;
+}
+
+div#navWrapper {
+	position: sticky;
+	top: 0;
+}
+
+nav {
+	width: 100%;
+	border-bottom: darken($color7, 50%);
+	ul {
+		display: flex;
+		justify-content: right;
+		background-color: lighten($color7, 12%);
+		padding: 0 7rem;
+		margin: 0;
+	}
+	ul li {
+		list-style: none;
+	}
+	ul li a {
+		display: block;
+		padding: 0.75rem;
+		color: white;
+		background: lighten($color7, 12%);
+		text-decoration: none;
+		text-align: center;
+
+		&:hover {
+			color: lighten(white, 0%);
+			background-color: darken($color7, 3%);
+		}
+	}
+}
