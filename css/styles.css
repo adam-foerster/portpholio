@@ -364,3 +364,18 @@ nav ul li a:hover {
   color: white;
   background-color: #022b3a;
 }
+
+div#mainWrapper section {
+  min-height: 100vh;
+}
+div#mainWrapper section#one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#mainWrapper section#one h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
