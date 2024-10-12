@@ -413,11 +413,30 @@ section#four h1 {
   margin: 0;
 }
 
+section#five {
+  display: flex;
+  flex-direction: column;
+}
 section#five h1 {
   font-weight: 700;
   font-size: 3rem;
   padding: 0;
   margin: 0;
+}
+section#five .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.5rem;
+}
+section#five .card {
+  background-color: #eaeaea;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+section#five .btn {
+  width: 100%;
 }
 
 section#six {
@@ -517,4 +536,21 @@ footer p.legal a {
 }
 footer .title {
   display: none;
+}
+
+.none {
+  display: none;
+}
+
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  color: #121f1f;
+}
+.btn:hover {
+  background-color: white;
 }

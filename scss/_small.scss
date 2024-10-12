@@ -107,11 +107,28 @@ section#four {
 }
 
 section#five {
+	display: flex;
+	flex-direction: column;
 	h1 {
 		font-weight: $boldWeight;
 		font-size: 3rem;
 		padding: 0;
 		margin: 0;
+	}
+	.projects {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 0.5rem;
+	}
+	.card {
+		background-color: lighten($secondaryColor, 0%);
+		border-radius: 5px;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.btn {
+		width: 100%;
 	}
 }
 
@@ -214,5 +231,24 @@ footer {
 	}
 	.title {
 		display: none;
+	}
+}
+
+//Universals
+
+.none {
+	display: none;
+}
+
+.btn {
+	display: block;
+	padding: 0.5rem 1rem;
+	border-radius: 3px;
+	border: 1px solid black;
+	text-decoration: none;
+	text-align: center;
+	color: $fontColor;
+	&:hover {
+		background-color: lighten(white, 10%);
 	}
 }
