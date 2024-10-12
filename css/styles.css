@@ -365,17 +365,156 @@ nav ul li a:hover {
   background-color: #022b3a;
 }
 
-div#mainWrapper section {
-  min-height: 100vh;
+div#mainWrapper {
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
-div#mainWrapper section#one {
+div#mainWrapper section {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 70vw;
+  padding: 0 1rem 0 1rem;
+  min-height: 93vh;
 }
-div#mainWrapper section#one h1 {
+
+section#one h1 {
   font-weight: 700;
   font-size: 3rem;
   padding: 0;
   margin: 0;
+}
+
+section#two {
+  background-color: aqua;
+}
+section#two h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+section#three h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+section#four {
+  background-color: aqua;
+}
+section#four h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+section#five h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+section#six {
+  background-color: #eaeaea;
+  height: 85vh !important;
+}
+section#six form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+section#six label {
+  display: block;
+  margin: 1rem;
+  padding: 1rem 2rem 0 2rem;
+  width: 100%;
+}
+section#six label.title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+section#six input {
+  width: 90%;
+  padding: 0.5rem;
+  margin: 0 2rem;
+  border: 1px solid black;
+}
+section#six textarea {
+  width: 90%;
+  height: 10rem;
+  padding: 1rem;
+  margin: 0 0 2rem 0;
+  background-color: white;
+  resize: none;
+  border: 1px solid black;
+}
+section#six button {
+  align-self: flex-start;
+  padding: 1rem;
+  margin: 0 2rem;
+  border-radius: 3px;
+  background-color: white;
+}
+section#six button:hover {
+  background-color: #d6d6d6;
+}
+section#six h3 {
+  margin: 0;
+  padding: 1rem 2rem 0 2rem;
+}
+section#six p {
+  margin: 0.5rem 1rem;
+}
+section#six p a {
+  color: black;
+  text-decoration: none;
+}
+section#six div.socials {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+}
+section#six div.socials a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+section#six div.socials a:hover {
+  transform: rotate(0.05turn);
+}
+
+/* FOOTER  */
+div#footerWrapper {
+  grid-row-start: 4;
+}
+
+#footerWrapper {
+  background-color: #056184;
+  color: white;
+}
+
+footer {
+  padding: 1rem 16px;
+}
+footer p.legal {
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+}
+footer p.legal a {
+  text-decoration: none;
+  color: white;
+}
+footer .title {
+  display: none;
 }
