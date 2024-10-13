@@ -435,6 +435,11 @@ section#five .card {
   display: flex;
   flex-direction: column;
 }
+section#five picture img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
 section#five .btn {
   width: 100%;
 }

@@ -127,6 +127,11 @@ section#five {
 		display: flex;
 		flex-direction: column;
 	}
+	picture img {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+	}
 	.btn {
 		width: 100%;
 	}

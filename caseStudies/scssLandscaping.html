@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<meta name="description" content="A portfolio about me." />
+		<meta name="author" content="Adam Foerster" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/styles.min.css" />
+	</head>
+	<body>
+		<div id="navWrapper">
+			<nav>
+				<ul id="primaryNav">
+					<li class="active">
+						<a href="../index.html#one"><span>Home</span></a>
+					</li>
+					<li>
+						<a href="../index.html#two"><span>About</span></a>
+					</li>
+					<li>
+						<a href="../index.html#three"><span>Education</span></a>
+					</li>
+					<li>
+						<a href="../index.html#four"><span>Skills</span></a>
+					</li>
+					<li>
+						<a href="../index.html#five"><span>My Work</span></a>
+					</li>
+					<li>
+						<a href="../index.html#six"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="mainWrapper">
+			<main>
+				<div class="overview">
+					<h2>SCSS Landscaping</h2>
+					<p>
+						The SCSS Landscaping page is a website where I experimented and
+						tested out the abilities and uses of SCSS in the DWDD 2610 course
+						here at UVU. SCSS or Sassy Cascading Style Sheets, is a preprocessor
+						for CSS, Cascading Style Sheets, which allows for the compression
+						and minimizing of your CSS files. SCSS has a lot of abilities that
+						aren’t found within CSS such as style nesting and mix-in functions
+						for reusability.
+					</p>
+				</div>
+
+				<div class="goals">
+					<h2>Goals</h2>
+					<p>
+						As I was making this site, the whole premise given to us was to
+						learn how to create a sliding interactive hero image. This seemingly
+						small aspect of a webpage that you see everywhere seemed such a
+						daunting task to me as I was starting out.
+					</p>
+				</div>
+
+				<div class="process">
+					<h2>Process</h2>
+					<p>
+						With the creation of the website as a whole, it started out pretty
+						simply. I didn’t need to worry about any other pages, or any major
+						decorations, and so I was able to quickly get that done. After that,
+						I grabbed some AI generated images for the slider and got to work.
+						It all started with the layout. How exactly was this slider going to
+						be organized in the HTML? A simple question really, but then you
+						need to realize that we needed to have 4 separate images, all stored
+						and available for use at a moment's notice, with only one displayed
+						at a time. Which after thinking about it, seemed easier than I
+						anticipated. The HTML itself wasn’t going to be controlling the
+						slider, the JS was. Javascript even has several modules made
+						specifically for this purpose. By using one of those, it would save
+						time and effort in getting it worked out. Once again, the lesson I
+						learned back during my typescript course is standing out to me.
+						Sometimes the simplest answer is the best. After realizing that, it
+						only took a few bits of research to find a good swiper to use,
+						install it via npm, and then use the module to get it working.
+					</p>
+				</div>
+
+				<div class="results">
+					<h2>Results</h2>
+					<p>
+						After I got that finished up the page was complete. It had a working
+						slider that cycles through 4 photos, while still allowing for the
+						ability to choose which photo you are wanting to look at. You can
+						also find the live site at:
+						<a href="https://scsstravelpage.netlify.app/">SCSS Landscaping</a>
+					</p>
+				</div>
+
+				<div class="reflection">
+					<h2>Reflection</h2>
+					<p>
+						As I look back at this project, there are a few things that I would
+						have done differently. I would have wanted to try and add more to
+						the page than just what was required. Going in and practicing what I
+						knew previously, working on each aspect of that I had learned
+						previously and then used this as an opportunity to refresh and
+						develop my skills some more.
+					</p>
+				</div>
+			</main>
+		</div>
+
+		<div id="footerWrapper">
+			<footer>
+				<p class="legal">
+					Copyright &copy; <span id="year"></span> | Adam Foerster Inc. | All
+					rights reserved
+				</p>
+			</footer>
+		</div>
+	</body>
+	<script src="../js/scripts.js" type="module"></script>
+</html>

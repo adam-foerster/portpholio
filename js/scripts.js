@@ -8,7 +8,11 @@ projects.forEach((project) => {
 	const card = document.createElement("div");
 	card.classList.add("card");
 	card.innerHTML = `
-    <img src="${project.image}" alt="${project.title}" />
+    <picture>
+		<source srcset="${project.img}.avif"/>
+		<source srcset="${project.img}.webp" />
+		<img src="${project.img}.jpg" />
+	</picture>
     <div class="content">
         <h3 class='name'>${project.title}</h3>
         <p class='description'>${project.description}</p>

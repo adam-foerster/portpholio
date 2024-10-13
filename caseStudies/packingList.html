@@ -16,30 +16,151 @@
 		/>
 		<link rel="stylesheet" href="../css/styles.min.css" />
 	</head>
+	<div id="navWrapper">
+		<nav>
+			<ul id="primaryNav">
+				<li class="active">
+					<a href="../index.html#one"><span>Home</span></a>
+				</li>
+				<li>
+					<a href="../index.html#two"><span>About</span></a>
+				</li>
+				<li>
+					<a href="../index.html#three"><span>Education</span></a>
+				</li>
+				<li>
+					<a href="../index.html#four"><span>Skills</span></a>
+				</li>
+				<li>
+					<a href="../index.html#five"><span>My Work</span></a>
+				</li>
+				<li>
+					<a href="../index.html#six"><span>Contact</span></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 	<body>
-		<div id="navWrapper">
-			<nav>
-				<ul id="primaryNav">
-					<li class="active">
-						<a href="../index.html#one"><span>Home</span></a>
-					</li>
-					<li>
-						<a href="../index.html#two"><span>About</span></a>
-					</li>
-					<li>
-						<a href="../index.html#three"><span>Education</span></a>
-					</li>
-					<li>
-						<a href="../index.html#four"><span>Skills</span></a>
-					</li>
-					<li>
-						<a href="../index.html#five"><span>My Work</span></a>
-					</li>
-					<li>
-						<a href="../index.html#six"><span>Contact</span></a>
-					</li>
-				</ul>
-			</nav>
+		<div class="mainWrapper">
+			<main>
+				<section class="overview">
+					<h2>The Digital Packing List</h2>
+					<p>
+						The Digital Packing List Project uses React JS to create a good user
+						experience for adding, subtracting, packing, and tracking items on
+						your packing list before you travel. I made this project while
+						working on a React-based course on Udemy by Jonas Schmmedten. This
+						was my first real project using the React JS framework, and because
+						of this, it was difficult to understand what exactly was happening
+						with the use of state. But in the end, I understood more about how
+						the React JS framework works.
+					</p>
+				</section>
+
+				<section class="goals">
+					<h2>The Big Picture</h2>
+					<p>
+						When creating this project there were a few goals that I had in
+						mind:
+						<br />
+						1. Create a web application using the current React Standards <br />
+						2. Create a easily understood application that allows for the
+						adding, deleting, completing, saving, and loading of a list to be
+						used for packing for a trip.
+					</p>
+				</section>
+
+				<section class="audience">
+					<h2>But Why?</h2>
+					<p>
+						As I was creating this project it took me a while to realize who was
+						ever going to use it. It was a chance for me to learn the react
+						framework yes, but what was its purpose. And then it hit me, Almost
+						literally, I almost knocked my waterbottle onto my foot. This
+						project didn't need to be for anything other than to help me learn.
+						Now that doesn't mean that I shouldn't pay attention to the process
+						so that if anyone did just happen to discover it they wouldn't
+						understand it but that I should focus on learning and then
+						afterwards turn it into something usable just in case someone
+						happens upon it.
+					</p>
+				</section>
+
+				<section class="process">
+					<h2>So it Begins</h2>
+					<p>
+						Starting out, I had learned some of the basics of react. I
+						understood the basic of state, components, and props and it was time
+						to put all of it together in a way that allowed each of them to show
+						off their uses and abilities. Components are the containers, the
+						physical objects that are shown and rendered to the screen. Props
+						are the physical data that is passed into and out of those
+						componencts. And finally, State is the mastermind of it all. State,
+						is the ability to store those props, update them via functions, and
+						then automatically rerender those components without the need to
+						refresh or reboot the entire program. By using state you save on
+						load times, and have automatically reactive websites and web
+						applications. Now why does that matter? Well, because showing this
+						and using it is what this process is all about. It all started with
+						data. What data am I storing, and what do I do with it once I have
+						it. That part was farely simple, I was creating a packing list web
+						application anyway. The data that was getting was going to be items
+						that needed to be packed, how many of them, and then whether they
+						had been packed already. This was a great use for props and lists.
+						By having an input box, take in information, a drop down with
+						numbers, and a simple submit button, using state, we are able to
+						take that information, map it to a list, and then pass that data
+						using props into the visible component. That there is the basics of
+						this project. It is what happened after this that was the most
+						interesting. After everything was said and done, all the components
+						looked good, and the data was being stored updated and changed
+						properly, it was finished. This was actually where the course I was
+						taken moved onto other things. But I wasn't finished, what about
+						savings, sharing and your packing lists. There had to be a way that
+						you could save your lists to your system and then behind the scenes
+						have it so that you could pull back up your packing list right. And
+						the answer is not really. One of the downsides of react is the
+						inability to access system files. That didn't stop me though. With
+						some help, I was able to create a way to download your packing list
+						to your computer, and then upload one back up to it. Now this isn't
+						the most eloquent of options, but it does function properly to an
+						extent.
+					</p>
+				</section>
+
+				<section class="product">
+					<h2>The Final Product</h2>
+					<p>
+						In the end I was able to learn the basics of React JS. While doing
+						so I created a website that both functional and helped me to learn.
+					</p>
+				</section>
+
+				<section class="nextTime">
+					<h2>What's Next?</h2>
+					<p>
+						Looking back at this project, It was a rather smooth process. There
+						were times when I got frustrated at myself not learning fast enough,
+						or the limitations to what some frameworks offer, but it helped me
+						realize that everything has it's ups and downs. It's benefits and
+						it's downsides. If I could go back and talk to myself as I was
+						creating it, I would tell myself to spend more time trying it out.
+						Play around, have fun with it. You don't need to worry about it
+						being perfect, it is more important to learn and more importantly
+						understand why something works, than the fact that it does work.
+					</p>
+				</section>
+			</main>
+
+			<div id="footerWrapper">
+				<footer>
+					<p class="legal">
+						Copyright &copy; <span id="year"></span> | Adam Foerster Inc. | All
+						rights reserved
+					</p>
+				</footer>
+			</div>
 		</div>
 	</body>
+	<script src="../js/scripts.js" type="module"></script>
 </html>
