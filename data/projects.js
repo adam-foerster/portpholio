@@ -33,7 +33,7 @@ const projects = [
 	},
 	{
 		id: 5,
-		title: "TBD",
+		title: "Preparing Media for Web Use",
 		description: "This is a project",
 	},
 	{
