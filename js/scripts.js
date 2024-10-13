@@ -1,4 +1,15 @@
-import projects from "../data/projects.json";
+//import projects from "../data/projects.json" assert { type: "json" };
+
+//fetch the data from the json file and store it as a projects array
+let projects = [];
+fetch("../data/projects.json")
+	.then((response) => response.json())
+	.then((data) => {
+		projects = data;
+	})
+	.catch((error) => {
+		console.error("Error:", error);
+	});
 
 //populate and create cards with data
 
