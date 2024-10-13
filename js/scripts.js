@@ -1,4 +1,5 @@
 import projects from "../data/projects.js";
+console.log(projects);
 
 //populate and create cards with data
 
