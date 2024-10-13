@@ -1,4 +1,4 @@
-import projects from "./projects.js";
+import projects from "../data/projects.js";
 
 //populate and create cards with data
 
