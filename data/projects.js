@@ -12,7 +12,7 @@ const projects = [
 		title: "React Packing List",
 		description:
 			"React Packing List was created as a learning opportunity to explore React, and to create a simple packing list application.",
-		img: "./images/packinglistLandingg",
+		img: "./images/packinglistLanding",
 		url: "./caseStudies/packingList.html",
 	},
 	{
