@@ -4,7 +4,7 @@ const projects = [
 		title: "Exploring Typescript",
 		description:
 			"Exploring Typescript, a project created in order to learn the basics of Typescript, and present the basics of the language.",
-		img: "./images/typescriptLanding",
+		img: "./images/typeScriptLanding",
 		url: "./caseStudies/typescript.html",
 	},
 	{
@@ -12,7 +12,7 @@ const projects = [
 		title: "React Packing List",
 		description:
 			"React Packing List was created as a learning opportunity to explore React, and to create a simple packing list application.",
-		img: "./images/packingListLanding",
+		img: "./images/packinglistLandingg",
 		url: "./caseStudies/packingList.html",
 	},
 	{
