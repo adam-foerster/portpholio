@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
 	{
 		id: 1,
 		title: "Exploring Typescript",
@@ -42,3 +42,5 @@ export const projects = [
 		description: "This is a project",
 	},
 ];
+
+export default projects;
