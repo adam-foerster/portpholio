@@ -3,7 +3,7 @@ const projects = [
 		id: 1,
 		title: "Exploring Typescript",
 		description:
-			"Exploring Typescript, a project created in order to learn the basics of Typescript, and present the basics of the language.",
+			"Exploring Typescript, a project created in order to learn the basics of Typescript, and present the basics of the language to a user.",
 		img: "./images/typeScriptLanding",
 		url: "./caseStudies/typescript.html",
 	},
@@ -33,8 +33,11 @@ const projects = [
 	},
 	{
 		id: 5,
-		title: "Preparing Media for Web Use",
-		description: "This is a project",
+		title: "Scripting for Internet Use.",
+		description:
+			"Scripting data is an essential part of web development, this project was created to explore the basics of scripting data and presenting it to the users.",
+		img: "./images/scriptingLandingPage",
+		url: "./caseStudies/scripting.html",
 	},
 	{
 		id: 6,

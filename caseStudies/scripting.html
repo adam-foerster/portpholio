@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<meta name="description" content="A portfolio about me." />
+		<meta name="author" content="Adam Foerster" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/styles.min.css" />
+	</head>
+	<body>
+		<div id="navWrapper">
+			<nav>
+				<ul id="primaryNav">
+					<li class="active">
+						<a href="../index.html#one"><span>Home</span></a>
+					</li>
+					<li>
+						<a href="../index.html#two"><span>About</span></a>
+					</li>
+					<li>
+						<a href="../index.html#three"><span>Education</span></a>
+					</li>
+					<li>
+						<a href="../index.html#four"><span>Skills</span></a>
+					</li>
+					<li>
+						<a href="../index.html#five"><span>My Work</span></a>
+					</li>
+					<li>
+						<a href="../index.html#six"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="mainWrapper">
+			<main>
+				<div class="overview">
+					<h2>Scripting for Web</h2>
+					<p>
+						When working on the internet, most websites and web applications
+						have a purpose. There are very few pages and applications that just
+						exist and do nothing. Often it is needed for these websites and
+						applications to grab data from an existing data set and then
+						presenting it in some sort of way. During this project, I use
+						javascript to grab and present data from a premade data set all
+						about star wars starships. This was done while working in my
+						Scripting for Internet Technolagy class with Thor Anderson.
+					</p>
+				</div>
+
+				<div class="goals">
+					<h2>But Why?</h2>
+					<p>
+						The whole purpose of this website was to better understand the
+						process and uses of scripting data in web applications and sites. It
+						was made specifically for us to understand the reasoning why and how
+						we can best do this for our future references.
+					</p>
+				</div>
+
+				<div class="process">
+					<h2>Working Through It</h2>
+					<p>
+						While working on this project it was an interesting process trying
+						to work out how exactly to present the information to the users. We
+						were able to import to successfully import the data from our
+						specific separate data file and get it into a usable state. From
+						there we grabbed the images, title and then some additional
+						information such as max-speed, amount of passengers, and hyperdrive
+						rating.
+					</p>
+					<p>
+						The most difficult part of this project was taking that additional
+						information, and presenting them in a list that makes sense. Getting
+						the data scripting each as separate list items in an unordered list.
+						I kept getting data that I didn’t want put into the list, or it not
+						appearing at all. What I found to be happening was the logic that I
+						was using to get the data was reaching outside of the scope of the
+						data leading it to show me information that I wasn’t looking for or
+						needing, or just causing it to not appear at all. After figuring
+						this out, I decided that I would process the data in opposite
+						fashion meaning that I would set specific properties to skip instead
+						of getting specific items to present. By doing so, I could use a
+						multi condtinoal if statement to specifically skip the properties
+						that I wasn’t wanting to see.
+					</p>
+				</div>
+
+				<div class="product">
+					<h2>Results</h2>
+					<p>
+						After finishing it up, I was able to create a basic website that
+						took the data collected and the presented it to the users. You can
+						find it at the following website.
+						https://personal-profile-app.netlify.app/starships/.
+					</p>
+				</div>
+				<div class="nextTime">
+					<h2>Looking Back</h2>
+					<p>
+						Looking back this was a great learning experience in scripting data
+						for web use. As I look at the website now, I would have tried to
+						create a better asthetic for the site, yes the yellow, white, and
+						stary night look good in theme, visually, it isn’t that appealing. I
+						would have preferred to create something that isn’t fully in theme,
+						but looks more visually appealing. I would have also loved to use
+						the conditional statements to change the property names to be more
+						readable and less code language, but that will be for next time.
+					</p>
+				</div>
+			</main>
+		</div>
+
+		<div id="footerWrapper">
+			<footer>
+				<p class="legal">
+					Copyright &copy; <span id="year"></span> | Adam Foerster Inc. | All
+					rights reserved
+				</p>
+			</footer>
+		</div>
+	</body>
+	<script src="../js/scripts.js" type="module"></script>
+</html>
