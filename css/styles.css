@@ -369,6 +369,7 @@ div#mainWrapper {
   display: flex;
   align-self: center;
   justify-content: center;
+  margin: auto;
 }
 div#mainWrapper section {
   display: flex;
@@ -377,6 +378,13 @@ div#mainWrapper section {
   width: 70vw;
   padding: 0 1rem 0 1rem;
   min-height: 93vh;
+}
+div#mainWrapper section.caseStudy {
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
 }
 
 section#one h1 {

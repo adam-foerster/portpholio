@@ -11,8 +11,8 @@ projects.forEach((project) => {
 	card.innerHTML = `
     <picture>
 		<source srcset="${project.img}.avif"/>
-		<source srcset="${project.img}.webp" />
-		<img src="${project.img}.jpg" />
+		<source srcset="${project.img}.webp"/>
+		<img src="${project.img}.jpg"/>
 	</picture>
     <div class="content">
         <h3 class='name'>${project.title}</h3>
