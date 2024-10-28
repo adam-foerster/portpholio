@@ -41,8 +41,11 @@ const projects = [
 	},
 	{
 		id: 6,
-		title: "TBD",
-		description: "This is a project",
+		title: "Preparing Images for Web Use",
+		description:
+			"Preparing images for web use is an essential part of web development, this project was created to explore the basics of image optimization.",
+		img: "./images/mediaOutputsLanding",
+		url: "./caseStudies/mediaOutputs.html",
 	},
 ];
 

@@ -3,5 +3,8 @@
 		"start": "vite",
 		"build": "vite build",
 		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.20"
 	}
 }

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<meta name="description" content="A portfolio about me." />
+		<meta name="author" content="Adam Foerster" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/styles.min.css" />
+	</head>
+	<body>
+		<div id="navWrapper">
+			<nav>
+				<ul id="primaryNav">
+					<li class="active">
+						<a href="../index.html#one"><span>Home</span></a>
+					</li>
+					<li>
+						<a href="../index.html#two"><span>About</span></a>
+					</li>
+					<li>
+						<a href="../index.html#three"><span>Education</span></a>
+					</li>
+					<li>
+						<a href="../index.html#four"><span>Skills</span></a>
+					</li>
+					<li>
+						<a href="../index.html#five"><span>My Work</span></a>
+					</li>
+					<li>
+						<a href="../index.html#six"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="mainWrapper">
+			<main>
+				<section class="overview caseStudy">
+					<div class="caseStudyText">
+						<h2>Preparing media for Web Use</h2>
+						<p>
+							When working online, there is always a use for images. We see
+							images all over the pace. From websites, to news articles, images
+							are used everywhere. And ensuring that these images are presented
+							in the best and most efficient way is an integral part of
+							developing for a website. In this project we did just that, we
+							explored the different formats of images and their respective
+							sizes.
+						</p>
+					</div>
+
+					<picture>
+						<source srcset="../images/elmoTest.avif" width="500px" />
+						<source srcset="../images/elmoTest.webp" />
+						<img src="../images/elmoTest.jpg" />
+					</picture>
+				</section>
+
+				<section class="goals caseStudy">
+					<div class="caseStudyText">
+						<h2>What is this about?</h2>
+						<p>
+							When starting out, It was first time to understand the different
+							types of images, and how their storage sizes interacted with each
+							other. And so we got into the research. We learned about the
+							different file types starting with RAW files that contain no
+							compression, then to the different compressed image formats such
+							as JPG, and WebP. We also looked into how quality effected the
+							overall image size.
+						</p>
+					</div>
+					<picture>
+						<source srcset="../images/elmoTest.avif" width="500px" />
+						<source srcset="../images/elmoTest.webp" />
+						<img src="../images/elmoTest.jpg" />
+					</picture>
+				</section>
+
+				<section class="audience caseStudy">
+					<div class="caseStudyText">
+						<h2>But Why</h2>
+						<p>
+							For this project it was done as part of an assignment in the Media
+							Output and formats class at UVU with Michael Harper
+						</p>
+					</div>
+					<picture>
+						<source srcset="../images/elmoTest.avif" width="500px" />
+						<source srcset="../images/elmoTest.webp" />
+						<img src="../images/elmoTest.jpg" />
+					</picture>
+				</section>
+
+				<section class="process caseStudy">
+					<div class="caseStudyText">
+						<h2>Going At it</h2>
+						<p>
+							As I started out, it made since to start with a uncompressed RAW
+							image file. These photos, I took myself and used different
+							compression tools to find which format and file type would lead to
+							the lowest file size with the best quality of image.
+						</p>
+						<p>
+							These images started as 4k images and both were around 10 MB
+							large. The first compression settings I used were the photoshop
+							JPEG compression. This was probably the most frustrating process I
+							did. As I went through the compression options, it seemed that
+							Photoshop had a different compression algorithms for each of the
+							different export and save options.
+						</p>
+						<p>
+							This lead me to go through each one of them looking to see what
+							options where available for each, and what quality settings were
+							available with each option. This process took the longest of all
+							of them as there seemed to be more and more options available the
+							longer that I went into it. Something that I found out though is
+							that mid high quality, and high quality have no difference when it
+							comes to overall image appearance. As an example of this quality
+							level 8 in the export as options of photoshop is just as good
+							quality as quality level 12 with a significantly lower file size.
+						</p>
+						<p>
+							After that I focused on Webp and the AVIF file types, each of the
+							newer file types that have come out. With those compression
+							options I exported each of them in the different quality options
+							available to find the best spread of data. When looking into WebP
+							it was very apparent the lower file sizes with similar quality.
+							Same with AVIF, it had a lower file size and similar quality
+							available. Each of them though still have their merit and uses.
+							With AVIF being a relatively new format, it isn’t implemented on
+							older devices, similarly with WebP. So Jpeg is still useful when
+							as an option of older devices.
+						</p>
+					</div>
+					<picture>
+						<source srcset="../images/elmoTest.avif" width="500px" />
+						<source srcset="../images/elmoTest.webp" />
+						<img src="../images/elmoTest.jpg" />
+					</picture>
+				</section>
+
+				<section class="product caseStudy">
+					<div class="caseStudyText">
+						<h2>What I learned</h2>
+						<p>
+							What I ended up learning was that image tags in html were no
+							longer a really viable option anymore when working with websites.
+							We need to provide options for all devices but still give the best
+							quality when available. And so, picture tags with subsources are
+							the best way to do that. We are able to have the lower files and
+							faster loading formats of AVIF and WebP, but still set a default
+							image to be JPG so that when the site is loaded on older devices
+							the images can still be seen. You can find my documentation on the
+							event here.
+						</p>
+						<a
+							href="https://tangerine-strudel-6404f8.netlify.app/index.html"
+							target="_blank"
+							>https://tangerine-strudel-6404f8.netlify.app/index.html</a
+						>
+					</div>
+					<picture>
+						<source srcset="../images/elmoTest.avif" width="500px" />
+						<source srcset="../images/elmoTest.webp" />
+						<img src="../images/elmoTest.jpg" />
+					</picture>
+				</section>
+
+				<section class="nextTime caseStudy">
+					<div class="caseStudyText">
+						<h2>Looking Back</h2>
+						<p>
+							Looking back, this project was a good experience understanding the
+							nuances of images and file formats. If I were to do it again, I
+							would want to use different images and track more options than
+							just quality differences. I would want to track options such as
+							how progressive loading effected wait times, and how some of the
+							different options change how he files load.
+						</p>
+					</div>
+					<picture>
+						<source srcset="../images/elmoTest.avif" width="500px" />
+						<source srcset="../images/elmoTest.webp" />
+						<img src="../images/elmoTest.jpg" />
+					</picture>
+				</section>
+			</main>
+		</div>
+
+		<div id="footerWrapper">
+			<footer>
+				<p class="legal">
+					Copyright &copy; <span id="year"></span> | Adam Foerster Inc. | All
+					rights reserved
+				</p>
+			</footer>
+		</div>
+	</body>
+	<script src="../js/scripts.js" type="module"></script>
+</html>
