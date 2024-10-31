@@ -221,6 +221,12 @@ section#six {
 	}
 }
 
+//case study
+
+section.caseStudy.nextTime .caseStudyText {
+	column-span: all;
+}
+
 // FOOTER
 
 /* FOOTER  */
@@ -269,25 +275,7 @@ footer {
 }
 
 pre {
-	white-space: pre-line;
-	border: 1px solid black;
-	padding: 1rem;
+	white-space: pre-wrap;
 	border-radius: 10px;
-	color: white;
-	background-color: #1f1f1f;
-	code span.comment {
-		color: #669454;
-	}
-	code span.keyword {
-		color: #528dc1;
-	}
-	code span.variable {
-		color: #4dbbf6;
-	}
-	ß code span.string {
-		color: #c28a71;
-	}
-	code span.function {
-		color: #d8d8a9;
-	}
+	padding: 0 2rem;
 }

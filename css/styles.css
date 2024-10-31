@@ -530,6 +530,11 @@ section#six div.socials a:hover {
   transform: rotate(0.05turn);
 }
 
+section.caseStudy.nextTime .caseStudyText {
+  -moz-column-span: all;
+       column-span: all;
+}
+
 /* FOOTER  */
 div#footerWrapper {
   grid-row-start: 4;
@@ -574,22 +579,7 @@ footer .title {
 }
 
 pre {
-  white-space: pre-line;
-  border: 1px solid black;
-  padding: 1rem;
+  white-space: pre-wrap;
   border-radius: 10px;
-  color: white;
-  background-color: #1f1f1f;
-}
-pre code span.comment {
-  color: #669454;
-}
-pre code span.keyword {
-  color: #528dc1;
-}
-pre code span.variable {
-  color: #4dbbf6;
-}
-pre code span.string {
-  color: #c28a71;
+  padding: 0 2rem;
 }

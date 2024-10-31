@@ -15,6 +15,18 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="../css/styles.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/panda-syntax-dark.min.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", (event) => {
+				document.querySelectorAll("pre code").forEach((block) => {
+					hljs.highlightBlock(block);
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div id="navWrapper">
@@ -62,27 +74,15 @@
 					</div>
 
 					<pre>
-						<code>
-
-							<!-- function greetUser(name: string, age?: number): string {
-
-								if (age) {
-									return \`Hello \${name}, you are \${age} years old\`
-								} else {
-									return \`Hello \${name}\`
-								} -->
-
-
-							<span class="comment">// TypeScript Function</span>
-							<span class="keyword">function</span> <span class="function">greetUser</span>(<span class="variable">name</span>: <span class="type">string</span>, <span class="variable">age</span>?: <span class="type">number</span>): <span class="type">string</span> {
-								<span class="keyword">if</span> (<span class="variable">age</span>) {
-									<span class="keyword">return</span> \`Hello \${<span class="variable">name</span>}, you are \${<span class="variable">age</span>} years old\`
-								} <span class="keyword">else</span> {
-									<span class="keyword">return</span> \`Hello \${<span class="variable">name</span>}\`
-								}
-							}
-							
-						</code>
+						<code><span class="comment">// TypeScript Function</span>
+							<span></span>
+<span class="keyword">function</span> <span class="function">greetUser</span>(<span class="variable">name</span>: <span class="type">string</span>, <span class="variable">age</span>?: <span class="type">number</span>): <span class="type">string</span> {
+<span class="keyword">if</span> (<span class="variable">age</span>) {
+<span class="keyword">return</span> \`Hello \${<span class="variable">name</span>}, you are \${<span class="variable">age</span>} years old\`
+} <span class="keyword">else</span> {
+<span class="keyword">return</span> \`Hello \${<span class="variable">name</span>}\`
+}
+}</code>
 					</pre>
 				</section>
 
@@ -234,11 +234,6 @@
 							the easiest to understand.
 						</p>
 					</div>
-					<picture>
-						<source srcset="../images/elmoTest.avif" width="500px" />
-						<source srcset="../images/elmoTest.webp" />
-						<img src="../images/elmoTest.jpg" />
-					</picture>
 				</section>
 			</main>
 		</div>
