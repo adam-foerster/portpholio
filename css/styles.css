@@ -388,6 +388,10 @@ div#mainWrapper section.caseStudy {
   gap: 1rem;
 }
 
+section#one {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+}
 section#one h1 {
   font-weight: 700;
   font-size: 3rem;
@@ -567,4 +571,25 @@ footer .title {
 }
 .btn:hover {
   background-color: white;
+}
+
+pre {
+  white-space: pre-line;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  background-color: #1f1f1f;
+}
+pre code span.comment {
+  color: #669454;
+}
+pre code span.keyword {
+  color: #528dc1;
+}
+pre code span.variable {
+  color: #4dbbf6;
+}
+pre code span.string {
+  color: #c28a71;
 }

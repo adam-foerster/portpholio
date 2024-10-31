@@ -75,6 +75,8 @@ div#mainWrapper {
 }
 
 section#one {
+	display: grid !important;
+	grid-template-columns: 1fr 1fr;
 	h1 {
 		font-weight: $boldWeight;
 		font-size: 3rem;
@@ -263,5 +265,26 @@ footer {
 	color: $fontColor;
 	&:hover {
 		background-color: lighten(white, 10%);
+	}
+}
+
+pre {
+	white-space: pre-line;
+	border: 1px solid black;
+	padding: 1rem;
+	border-radius: 10px;
+	color: white;
+	background-color: #1f1f1f;
+	code span.comment {
+		color: #669454;
+	}
+	code span.keyword {
+		color: #528dc1;
+	}
+	code span.variable {
+		color: #4dbbf6;
+	}
+	code span.string {
+		color: #c28a71;
 	}
 }
