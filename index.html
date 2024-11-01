@@ -19,6 +19,14 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/panda-syntax-dark.min.css"
 		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", (event) => {
+				document.querySelectorAll("pre code").forEach((block) => {
+					hljs.highlightBlock(block);
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div id="navWrapper">
@@ -30,9 +38,9 @@
 					<li>
 						<a href="#two"><span>About</span></a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="#three"><span>Education</span></a>
-					</li>
+					</li> -->
 					<li>
 						<a href="#four"><span>Skills</span></a>
 					</li>
@@ -49,42 +57,59 @@
 		<div id="mainWrapper">
 			<main>
 				<section id="one">
-					<div>
-						<h1>Adam Foerster</h1>
-						<h2>Education & Carrer Portfolio</h2>
-					</div>
-					<pre>
-    <code class="javascript">
-      // This is a comment
-      const name = 'Adam Foerster';
+					<div class="container">
+						<div>
+							<div>
+								<h1>Adam Foerster</h1>
+								<h2>Education & Carrer Portfolio</h2>
+							</div>
+							<pre>
+    					<code class="javascript">// This is a comment
+      						const name = 'Adam Foerster';
       
-      let education = 'UVU';
-      let career = 'Web Developer';
-    </code>
-  </pre>
+      						let education = 'UVU';
+      						let career = 'Web Developer';
+    					</code>
+  					</pre>
+						</div>
+					</div>
 				</section>
 
 				<section id="two">
-					<h2>About Me</h2>
-					<p></p>
-					<div class="cards"></div>
-				</section>
+					<div class="container">
+						<picture>
+							<source srcset="./images/mugshot.avif" />
+							<source srcset="./images/mugshot.webp" />
+							<img src="./images/mugshot.jpg" height="300px" width="300px" />
+						</picture>
 
-				<section id="three">
-					<h2>Education</h2>
-					<div class="cards">
-						<div class="card"></div>
+						<div class="text2">
+							<h2>About Me</h2>
+							<p>
+								Hi, I'm Adam, a web developer and designer who strives to create
+								impactful and engaging digital experiences. I specialize in
+								TypeScript and responsive design, always aiming to merge
+								creativity with functionality. Outside of developing and
+								designing websites, I enjoy playing classic video games and
+								spending time with my family, both of which inspire me to craft
+								interactive and user-friendly products.
+							</p>
+						</div>
 					</div>
 				</section>
 
 				<section id="four">
-					<h2>Skills</h2>
-					<div class="cards"></div>
+					<div class="container">
+						<h2>Skills</h2>
+						<div class="cards"></div>
+					</div>
 				</section>
 
 				<section id="five">
-					<h2>My Work</h2>
-					<div class="projects"></div>
+					<div class="container">
+						<h2>My Work</h2>
+						<div class="projects"></div>
+					</div>
 				</section>
 
 				<section id="six">
