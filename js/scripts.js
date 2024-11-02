@@ -29,7 +29,7 @@ projects.forEach((project) => {
 const date = new Date();
 document.querySelector("#year").textContent = date.getFullYear().toString();
 
-//highlight code blocks
+// //highlight code blocks
 document.addEventListener("DOMContentLoaded", () => {
 	hljs.highlightAll();
 });
