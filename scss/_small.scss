@@ -75,14 +75,6 @@ div#mainWrapper {
 		margin-bottom: 1rem;
 		max-width: 1000px;
 	}
-
-	section.caseStudy {
-		min-height: 50vh;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-		gap: 1rem;
-	}
 }
 
 section#one {
@@ -145,7 +137,7 @@ section#four {
 		align-items: center;
 		text-align: center;
 		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-		gap: 0.5rem;
+		gap: 2rem;
 		li {
 			list-style: none;
 			display: flex;
@@ -272,8 +264,19 @@ section#six {
 
 //case study
 
-section.caseStudy.nextTime .caseStudyText {
-	column-span: all;
+#caseStudy {
+	width: 80%;
+}
+
+section.caseStudy {
+	display: flex;
+	flex-direction: column;
+	width: auto !important;
+	justify-content: center;
+
+	pre {
+		width: 70vw;
+	}
 }
 
 // FOOTER

@@ -390,13 +390,6 @@ div#mainWrapper div.container {
   margin-bottom: 1rem;
   max-width: 1000px;
 }
-div#mainWrapper section.caseStudy {
-  min-height: 50vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 1rem;
-}
 
 section#one {
   text-align: center;
@@ -455,7 +448,7 @@ section#four ul {
   align-items: center;
   text-align: center;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 0.5rem;
+  gap: 2rem;
 }
 section#four ul li {
   list-style: none;
@@ -578,9 +571,18 @@ section#six div.socials a:hover {
   transform: rotate(0.05turn);
 }
 
-section.caseStudy.nextTime .caseStudyText {
-  -moz-column-span: all;
-       column-span: all;
+#caseStudy {
+  width: 80%;
+}
+
+section.caseStudy {
+  display: flex;
+  flex-direction: column;
+  width: auto !important;
+  justify-content: center;
+}
+section.caseStudy pre {
+  width: 70vw;
 }
 
 /* FOOTER  */

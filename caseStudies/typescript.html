@@ -39,9 +39,6 @@
 						<a href="../index.html#two"><span>About</span></a>
 					</li>
 					<li>
-						<a href="../index.html#three"><span>Education</span></a>
-					</li>
-					<li>
 						<a href="../index.html#four"><span>Skills</span></a>
 					</li>
 					<li>
@@ -55,7 +52,7 @@
 		</div>
 
 		<div id="mainWrapper">
-			<main>
+			<main id="caseStudy">
 				<section class="overview caseStudy">
 					<div class="caseStudyText">
 						<h2>Understanding Typescript</h2>
@@ -72,17 +69,17 @@
 							programming languages.
 						</p>
 					</div>
-
 					<pre>
-						<code><span class="comment">// TypeScript Function</span>
-							<span></span>
-				<span class="keyword">function</span> <span class="function">greetUser</span>(<span class="variable">name</span>: <span class="type">string</span>, <span class="variable">age</span>?: <span class="type">number</span>): <span class="type">string</span> {
-				<span></span>
-				<span class="keyword">if</span> (<span class="variable">age</span>) {
-				<span class="keyword">return</span> \`Hello \${<span class="variable">name</span>}, you are \${<span class="variable">age</span>} years old\`
-				} <span class="keyword">else</span> {
-				<span class="keyword">return</span> \`Hello \${<span class="variable">name</span>}\`
-				}}</code>
+						<code>// TypeScript in Function
+							
+							function greetUser(name: string , age?: number): string{
+							
+							if(age) {
+							return\`Hello \${name}, you are \${age} years old\`
+							} else {
+							return \`Hello \${name}\`
+							}}
+						</code>
 					</pre>
 				</section>
 
@@ -100,22 +97,22 @@
 							set off to learn typescript and grow along the way.
 						</p>
 					</div>
-					<pre>
-						<code>
-							<span class="comment">// This is a comment</span>
-							<span class="keyword">const</span> <span class="variable">name</span> = <span class="string">'Adam Foerster'</span>;
-							<span></span>
-							<span class="keyword">let</span> <span class="variable">education</span> = <span class="string">'UVU'</span>;
-							<span class="keyword">let</span> <span class="variable">career</span> = <span class="string">'Web Developer'</span>;
-						</code>
-					</pre>
 				</section>
 
 				<section class="audience caseStudy">
+					<pre>
+						<code>// TypeScript with paramaters
+
+							function add(num1: number, num2: number): string){
+							return (num1 + num2).toString()	}
+						</code>
+					</pre>
+
 					<div class="caseStudyText">
 						<h2>Entering the world of Typescript</h2>
+
 						<p>
-							irst a few questions came up, what exactly was I wanting to
+							First a few questions came up, what exactly was I wanting to
 							present and who was I looking at presenting it to. Using these
 							questions, It was soon realized that typescript isn't something
 							that anyone can just jump into and understand, there is some basic
@@ -130,15 +127,6 @@
 							of Javascript.
 						</p>
 					</div>
-					<pre>
-						<code>
-							<span class="comment">// This is a comment</span>
-							<span class="keyword">const</span> <span class="variable">name</span> = <span class="string">'Adam Foerster'</span>;
-							<span></span>
-							<span class="keyword">let</span> <span class="variable">education</span> = <span class="string">'UVU'</span>;
-							<span class="keyword">let</span> <span class="variable">career</span> = <span class="string">'Web Developer'</span>;
-						</code>
-					</pre>
 				</section>
 
 				<section class="process caseStudy">
@@ -186,11 +174,7 @@
 					</div>
 					<pre>
 						<code>
-							<span class="comment">// This is a comment</span>
-							<span class="keyword">const</span> <span class="variable">name</span> = <span class="string">'Adam Foerster'</span>;
-							<span></span>
-							<span class="keyword">let</span> <span class="variable">education</span> = <span class="string">'UVU'</span>;
-							<span class="keyword">let</span> <span class="variable">career</span> = <span class="string">'Web Developer'</span>;
+						
 						</code>
 					</pre>
 				</section>
@@ -214,7 +198,7 @@
 					<picture>
 						<source srcset="../images/typeScriptLanding.avif" />
 						<source srcset="../images/typeScriptLanding.webp" />
-						<img src="../images/typeScriptLanding.jpg" />
+						<img src="../images/typeScriptLanding.jpg" width="100%" />
 					</picture>
 				</section>
 
