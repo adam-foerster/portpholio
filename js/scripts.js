@@ -1,5 +1,4 @@
 import projects from "../data/projects.js";
-import hljs from "highlight.js/lib/core";
 
 console.log(projects);
 
@@ -28,8 +27,3 @@ projects.forEach((project) => {
 //inject current year in footer
 const date = new Date();
 document.querySelector("#year").textContent = date.getFullYear().toString();
-
-// //highlight code blocks
-document.addEventListener("DOMContentLoaded", () => {
-	hljs.highlightAll();
-});
