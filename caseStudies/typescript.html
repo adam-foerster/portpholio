@@ -148,6 +148,16 @@
 							worked on is not only the way that I learned typescript, but also
 							the way I presented it to the users.
 						</p>
+					</div>
+					<pre>
+							<code>// The Generics in this function allow for the array to take any item as long as the item and the array are the same type
+								
+								function reverse &lt;T&gt;(itemArray: T[]): T[] {
+									return itemArray.reverse();
+								}
+							</code>
+						</pre>
+					<div class="caseStudyText">
 						<p>
 							Now, this doesn't mean that there weren't hiccups along the way. A
 							prime example of this was while working on classes. I really
@@ -172,9 +182,21 @@
 							observer watch for each section based on those individually.
 						</p>
 					</div>
+
 					<pre>
 						<code>
-						
+							function callBackFunction(entries: IntersectionObserverEntry[]) {
+								// const [entry] = entries;
+								entries.forEach((entry) => {
+								  const divContent = entry.target.querySelector("div");
+							  
+								  if (divContent && entry.isIntersecting) {
+									divContent.classList.remove("translate-x-full", "opacity-0");
+								  } else if (divContent) {
+									divContent.classList.add("translate-x-full", "opacity-0");
+								  }
+								});
+							  }
 						</code>
 					</pre>
 				</section>
