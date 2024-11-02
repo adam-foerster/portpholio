@@ -15,7 +15,7 @@ html {
 body {
 	font-family: $defaultFont;
 	font-weight: $normalWeight;
-	color: $fontColor;
+	color: lighten($color7, 6%);
 }
 
 div#navWrapper {
@@ -139,6 +139,22 @@ section#four {
 		font-size: 3rem;
 		padding: 0;
 		margin: 0;
+	}
+	ul {
+		display: grid;
+		align-items: center;
+		text-align: center;
+		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+		gap: 0.5rem;
+		li {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 

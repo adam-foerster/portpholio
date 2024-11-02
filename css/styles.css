@@ -330,7 +330,7 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 500;
-  color: #121f1f;
+  color: #044c66;
 }
 
 div#navWrapper {
@@ -449,6 +449,22 @@ section#four h1 {
   font-size: 3rem;
   padding: 0;
   margin: 0;
+}
+section#four ul {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.5rem;
+}
+section#four ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+section#four ul img {
+  width: 100%;
+  height: auto;
 }
 
 section#five {
@@ -616,4 +632,24 @@ pre {
 pre code {
   border-radius: 10px;
   padding: 2rem 3rem;
+}
+
+@media only screen and (min-width: 60rem) {
+  section#one div.container .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  section#two div.container {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  section#two .text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
