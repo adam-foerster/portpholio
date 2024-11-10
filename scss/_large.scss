@@ -24,3 +24,24 @@ section#two {
 		align-items: center;
 	}
 }
+
+section.caseStudy {
+	flex-direction: row !important;
+	gap: 2rem;
+	flex-wrap: wrap;
+	.caseStudyText {
+		width: 40%;
+	}
+	pre {
+		width: 40%;
+	}
+	picture {
+		width: 40%;
+	}
+}
+
+section.product .caseStudyText,
+section.goals .caseStudyText,
+section.nextTime .caseStudyText {
+	width: 85%;
+}

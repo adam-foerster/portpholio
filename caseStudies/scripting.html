@@ -53,7 +53,7 @@
 
 		<div id="mainWrapper">
 			<main id="caseStudy">
-				<div class="overview caseStudy">
+				<section class="overview caseStudy">
 					<div class="caseStudyText">
 						<h2>Scripting for Web</h2>
 						<p>
@@ -78,9 +78,9 @@
 						  shipViewer.appendChild(area);
 						</code>
 					</pre>
-				</div>
+				</section>
 
-				<div class="goals caseStudy">
+				<section class="goals caseStudy">
 					<div class="caseStudyText">
 						<h2>But Why?</h2>
 						<p>
@@ -90,9 +90,9 @@
 							and how we can best do this for our future references.
 						</p>
 					</div>
-				</div>
+				</section>
 
-				<div class="process caseStudy">
+				<section class="process caseStudy">
 					<div class="caseStudyText">
 						<h2>Working Through It</h2>
 						<p>
@@ -104,23 +104,7 @@
 							information such as max-speed, amount of passengers, and
 							hyperdrive rating.
 						</p>
-						<pre>
-							<code>populateNav();
-							
-								function populateShipView(shipData) {
-								removeChildren(shipViewer);
-							  
-							  
-								const info = document.createElement("figcaption");
-								const area = document.createElement("figure");
-								const list = document.createElement("ul");
-								let i = 0;
-							  
-								let shipNum = getLastNumber(shipData.url);
-								shipImage.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`;
-							}
-							</code>
-						</pre>
+
 						<p>
 							The most difficult part of this project was taking that additional
 							information, and presenting them in a list that makes sense.
@@ -154,9 +138,9 @@
 						  }
 						</code>
 					</pre>
-				</div>
+				</section>
 
-				<div class="product caseStudy">
+				<section class="product caseStudy">
 					<div class="caseStudyText">
 						<h2>Results</h2>
 						<p>
@@ -175,8 +159,8 @@
 						<source srcset="../images/scriptingHero.webp" />
 						<img src="../images/scriptingHero.jpg" width="100%" />
 					</picture>
-				</div>
-				<div class="nextTime caseStudy">
+				</section>
+				<section class="nextTime caseStudy">
 					<div class="caseStudyText">
 						<h2>Looking Back</h2>
 						<p>
@@ -191,7 +175,7 @@
 							that will be for next time.
 						</p>
 					</div>
-				</div>
+				</section>
 			</main>
 		</div>
 
