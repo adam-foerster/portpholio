@@ -59,9 +59,10 @@ nav {
 
 div#mainWrapper {
 	display: flex;
-	align-self: center;
-	width: 100%;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	width: 100%;
 	section {
 		width: 100vw;
 		display: flex;
