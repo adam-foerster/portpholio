@@ -438,6 +438,13 @@ section#two .text2 p {
 section#two .text2 p {
   text-align: left;
 }
+section#two .text2 a {
+  text-decoration: none;
+  color: white;
+}
+section#two .text2 a:hover {
+  text-decoration: underline;
+}
 section#two picture img {
   -webkit-clip-path: circle(45% at 50% 50%);
           clip-path: circle(45% at 50% 50%);
