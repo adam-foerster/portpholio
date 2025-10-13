@@ -1,0 +1,5 @@
+ - Add A case study for Wordpress 
+ - Add A case study for SVELTE
+ - Add a case study for Tailwind (maybe)
+ - Add a case study for Candy Bomber
+ 
