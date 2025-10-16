@@ -1,3 +1,75 @@
 nav ul {
-	justify-content: justify;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+section#one {
+	div.container .grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		align-items: center;
+	}
+}
+
+section#two {
+	div.container {
+		display: grid;
+		align-content: center;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		align-items: center;
+
+		.text2 {
+			order: 2;
+		}
+
+		picture {
+			order: 1;
+			text-align: center;
+		}
+	}
+}
+
+section#four {
+	ul {
+		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+		gap: 2.5rem;
+	}
+}
+
+section#five {
+	.projects {
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		gap: 2.5rem;
+	}
+}
+
+section.caseStudy {
+	flex-direction: row !important;
+	gap: 3rem;
+	flex-wrap: wrap;
+	align-items: flex-start;
+
+	.caseStudyText {
+		width: 45%;
+		flex: 1;
+	}
+
+	pre {
+		width: 45%;
+		flex: 1;
+	}
+
+	picture {
+		width: 45%;
+		flex: 1;
+	}
+}
+
+section.product .caseStudyText,
+section.goals .caseStudyText,
+section.nextTime .caseStudyText {
+	width: 90%;
+	margin: 0 auto;
 }

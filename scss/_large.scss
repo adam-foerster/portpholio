@@ -1,12 +1,15 @@
 nav ul {
-	justify-content: right;
+	justify-content: flex-end;
+	padding-right: 2rem;
 }
 
 section#one {
 	div.container .grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 3rem;
+		gap: 4rem;
+		align-items: center;
+		max-width: 1400px;
 	}
 }
 
@@ -15,33 +18,72 @@ section#two {
 		display: grid;
 		align-content: center;
 		grid-template-columns: 1fr 1fr;
-		gap: 3rem;
-	}
-	.text2 {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		gap: 4rem;
 		align-items: center;
+		max-width: 1400px;
+
+		.text2 {
+			order: 2;
+		}
+
+		picture {
+			order: 1;
+			text-align: center;
+		}
+	}
+}
+
+section#four {
+	ul {
+		grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+		gap: 3rem;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+}
+
+section#five {
+	.projects {
+		grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+		gap: 3rem;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+}
+
+section#six {
+	form {
+		max-width: 700px;
 	}
 }
 
 section.caseStudy {
 	flex-direction: row !important;
-	gap: 2rem;
+	gap: 4rem;
 	flex-wrap: wrap;
+	align-items: flex-start;
+	max-width: 1400px;
+	margin: 0 auto;
+
 	.caseStudyText {
-		width: 40%;
+		width: 45%;
+		flex: 1;
 	}
+
 	pre {
-		width: 40%;
+		width: 45%;
+		flex: 1;
 	}
+
 	picture {
-		width: 40%;
+		width: 45%;
+		flex: 1;
 	}
 }
 
 section.product .caseStudyText,
 section.goals .caseStudyText,
 section.nextTime .caseStudyText {
-	width: 85%;
+	width: 90%;
+	margin: 0 auto;
 }

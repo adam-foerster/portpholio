@@ -1,17 +1,27 @@
-$primaryColor: #889bae;
-$secondaryColor: #eaeaea;
-// $secondaryColor: white;
-$accentColor: #b88d61;
-$otherColor: black;
-$fontColor: #121f1f;
+// Modern Dark Theme Color Palette
+$primaryColor: #6366f1; // Indigo
+$secondaryColor: #f8fafc; // Light gray
+$accentColor: #f59e0b; // Amber
+$otherColor: #1e293b; // Dark slate
+$fontColor: #f1f5f9; // Light slate
 
-$color1: lighten(#413e4a, 10%);
-$color2: #73626e;
-$color3: #b38184;
-$color4: #f0b49e;
-$color5: #f7e4be;
-$color6: #fecea8;
-$color7: #033649;
+// Dark gradient colors
+$bgStart: #0f172a; // Very dark blue
+$bgEnd: #1e293b; // Dark slate
+$bgGradient: linear-gradient(135deg, $bgStart 0%, $bgEnd 100%);
+
+// Section backgrounds
+$sectionBg: rgba(30, 41, 59, 0.8); // Semi-transparent dark
+$cardBg: rgba(51, 65, 85, 0.9); // Semi-transparent slate
+
+// Text colors
+$textPrimary: #f1f5f9; // Light slate
+$textSecondary: #cbd5e1; // Medium slate
+$textAccent: #f59e0b; // Amber
+
+// Interactive colors
+$hoverColor: #6366f1; // Indigo
+$activeColor: #4f46e5; // Darker indigo
 
 $defaultFont: "Nunito", sans-serif;
 $lightWeight: 300;
@@ -19,3 +29,7 @@ $normalWeight: 500;
 $boldWeight: 700;
 
 $gutter: 16px;
+
+// Animation variables
+$transitionSpeed: 0.3s;
+$transitionEase: cubic-bezier(0.4, 0, 0.2, 1);
