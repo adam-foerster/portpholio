@@ -72,8 +72,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -176,8 +175,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-  -moz-appearance: button;
-       appearance: button;
+  appearance: button;
 }
 
 /**
@@ -261,8 +259,7 @@ textarea {
    */
 [type=search] {
   -webkit-appearance: textfield; /* 1 */
-  -moz-appearance: textfield;
-       appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px; /* 2 */
 }
 
@@ -324,13 +321,14 @@ html {
 
 /*---- apply a natural box layout model to all elements -------*/
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 500;
-  color: #044c66;
+  color: rgb(4.2078947368, 75.7421052632, 102.3921052632);
 }
 
 div#navWrapper {
@@ -341,8 +339,8 @@ div#navWrapper {
 
 nav {
   width: 100%;
-  background-color: #056184;
-  border-bottom: 3px solid #044c66;
+  background-color: rgb(5.4157894737, 97.4842105263, 131.7842105263);
+  border-bottom: 3px solid rgb(4.2078947368, 75.7421052632, 102.3921052632);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,13 +360,13 @@ nav ul li a {
   display: block;
   padding: 0.75rem;
   color: white;
-  background: #056184;
+  background: rgb(5.4157894737, 97.4842105263, 131.7842105263);
   text-decoration: none;
   text-align: center;
 }
 nav ul li a:hover {
   color: white;
-  background-color: #022b3a;
+  background-color: rgb(2.3960526316, 43.1289473684, 58.3039473684);
 }
 
 div#mainWrapper {
@@ -422,7 +420,7 @@ section#one code {
 }
 
 section#two {
-  background-color: #0777a1;
+  background-color: rgb(6.6236842105, 119.2263157895, 161.1763157895);
   text-align: center;
 }
 section#two .text2 {
@@ -446,8 +444,7 @@ section#two .text2 a:hover {
   text-decoration: underline;
 }
 section#two picture img {
-  -webkit-clip-path: circle(45% at 50% 50%);
-          clip-path: circle(45% at 50% 50%);
+  clip-path: circle(45% at 50% 50%);
 }
 
 section#four h1 {
@@ -489,7 +486,7 @@ section#five .projects {
   gap: 0.5rem;
 }
 section#five .card {
-  background-color: #0777a1;
+  background-color: rgb(6.6236842105, 119.2263157895, 161.1763157895);
   color: white;
   border-radius: 5px;
   padding: 1rem;
@@ -507,11 +504,11 @@ section#five .btn {
   border-color: white;
 }
 section#five .btn:hover {
-  background-color: #055a7a;
+  background-color: rgb(5.0131578947, 90.2368421053, 121.9868421053);
 }
 
 section#six {
-  background-color: #0777a1;
+  background-color: rgb(6.6236842105, 119.2263157895, 161.1763157895);
   color: white;
 }
 section#six form {
@@ -554,7 +551,7 @@ section#six button {
   background-color: white;
 }
 section#six button:hover {
-  background-color: #d6d6d6;
+  background-color: rgb(213.6, 213.6, 213.6);
 }
 section#six h3 {
   margin: 0;
@@ -585,7 +582,9 @@ section#six div.socials a:hover {
 }
 
 #caseStudy {
-  width: 80%;
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
 }
 
 section.caseStudy {
@@ -607,7 +606,7 @@ div#footerWrapper {
 }
 
 #footerWrapper {
-  background-color: #056184;
+  background-color: rgb(5.4157894737, 97.4842105263, 131.7842105263);
   color: white;
 }
 

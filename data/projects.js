@@ -47,6 +47,14 @@ const projects = [
 		img: "./images/mediaOutputsLanding",
 		url: "./caseStudies/mediaOutputs.html",
 	},
+	{
+		id: 7,
+		title: "Learning Wordpress",
+		description:
+			"Learning Wordpress is a project created to explore the basics of the Wordpress platform, and to understand how to create and manage a Wordpress site.",
+		img: "./images/wordpressLanding",
+		url: "./caseStudies/wordpress.html",
+	},
 ];
 
 export default projects;

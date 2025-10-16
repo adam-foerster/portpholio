@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<meta name="description" content="A portfolio about me." />
+		<meta name="author" content="Adam Foerster" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="../css/styles.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/panda-syntax-dark.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", (event) => {
+				document.querySelectorAll("pre code").forEach((block) => {
+					hljs.highlightBlock(block);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="navWrapper">
+			<nav>
+				<ul id="primaryNav">
+					<li class="active">
+						<a href="../index.html#one"><span>Home</span></a>
+					</li>
+					<li>
+						<a href="../index.html#two"><span>About</span></a>
+					</li>
+					<li>
+						<a href="../index.html#four"><span>Skills</span></a>
+					</li>
+					<li>
+						<a href="../index.html#five"><span>My Work</span></a>
+					</li>
+					<li>
+						<a href="../index.html#six"><span>Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="mainWrapper">
+			<main id="caseStudy">
+				<section class="overview caseStudy">
+					<div class="caseStudyText">
+						<h2>Learning WordPress</h2>
+						<p>
+							Learning Wordpress Wordpress is one of the worlds largest Content
+							Management Systems(CMS) in use today, and is used in roughly 43%
+							of all websites that are being hosted today. With such a large and
+							important software, it is important to understand just how it is
+							used and why people all over the world are using it to run their
+							websites. During a 16 week long semester at UVU, I was able to
+							learn more about wordpress and host a site managed by wordpress
+							through Amazon Web Services (AWS). By the end of those 16 weeks, I
+							was hoping to be able to better understand how to implement a
+							custom theme into wordpress using SFTP (secure file transfer
+							protocol), learn some of the most popular and useful plugins for
+							wordpress, and ultimately build a site that has all the basic
+							necessities that a fictional business would need to have a basic
+							online store.
+						</p>
+					</div>
+					<img
+						src="../images/wpLogo.svg"
+						alt="WordPress Logo"
+						height="300"
+						width="425" />
+				</section>
+
+				<section class="goals caseStudy">
+					<div class="caseStudyText">
+						<h2>Getting Started with AWS</h2>
+						<p>
+							It all started with first understanding AWS and the online
+							hosting. If I couldn't get my code into AWS to be hosted, then
+							there would be no way to get it into wordpress. After looking into
+							what different options were available, I decided to simply use
+							AWS's sub tool S3 buckets. They work by allowing you to directly
+							drop your files into a 'bucket' and then they would use those
+							files to host the site. And so my fake Business Expo Parties was
+							made, and you can still see the very basic home page to this day
+							at http://expogamingparties.s3-website.us-east-2.amazonaws.com/#.
+						</p>
+					</div>
+				</section>
+
+				<section class="audience caseStudy">
+					<pre>
+                        <code>
+                            &lt;?php
+                            /** Disable Block Editor **/
+                            add_filter('use_block_editor_for_post', '__return_false');
+
+                            /** Disable Tiny MCE Editor **/
+                            add_filter( 'user_can_richedit' , '__return_false', 50 );
+
+                            /** Prevent WP from adding extra &lt;p> tags **/
+                            function disable_wp_auto_p ($content) {
+                                if ( is_singular('page')) {
+                                    remove_filter('the_content', 'wpautop');
+                                    remove_filter('the_excerpt', 'wpautop');
+                                } 
+                                    return $content;
+                            }
+                            add_filter('the_content', 'disable_wp_auto_p', 0);
+                            add_filter('wpcf7_autop_or_not', '__return_false');
+
+                            add_filter( 'wpcf7_form_autocomplete', function ( $autocomplete ) {
+                             $autocomplete = 'on';
+                                return $autocomplete;
+                            }, 10, 1 );
+
+                            /** Add a Menu Bar **/
+                             register_nav_menu('siteNav',__( 'Primary Nav' ));
+                            ?>
+                        </code>
+                    </pre>
+					<div class="caseStudyText">
+						<h2>Moving to WordPress with Lightsail</h2>
+						<p>
+							From there I went and learned more about Wordpress. Now that I
+							could get information into AWS it was time to see about linking it
+							to wordpress to host my site. That is where another tool from AWS
+							comes in hand, "Lightsail". Lightsail is a tool offered by AWS
+							that allows users to create a new instance of wordpress, and have
+							it be hosted through AWS. It will even allow you to connect to it
+							using SSH, and SFTP so that as you work in your separate coding
+							interface, you can link it to automatically sync to your site.
+							Using those tools, I quickly moved over from using S3 buckets to
+							Lightsail. We got the SSH key, Username and password and linked
+							out STFT to allow for the site to update our theme automatically.
+							From there we then disabled the 2 default editors that wordpress
+							has to offer and deleted all the preinstalled plugins. With that
+							clean slate, I started working on my theme.
+						</p>
+					</div>
+				</section>
+
+				<section class="process caseStudy">
+					<div class="caseStudyText">
+						<h2>Theme Development</h2>
+						<p>
+							It started by adding the empty theme to the wordpress site and
+							then implementing it on the page. From there I began working in
+							SCSS to build a basic responsive site that had both wayfinding,
+							feedback, and basic functionality. The theme was worked on
+							throughout the entire rest of the project as needed. But when it
+							was to the point where it was sufficient I was able to go in and
+							start creating each page through wordpress.
+						</p>
+					</div>
+					<pre>
+						<code> &lt;!--PHP Page Theme-->
+							&lt;?php get_header() ?>
+                            &lt;?php while ( have_posts() ) : the_post(); ?>    
+                                &lt;?php the_title("&lt;h1 class=h1>",'&lt;/h1>'); ?>
+                                &lt;?php the_content(); ?>
+                            &lt;?php endwhile; ?>
+                            &lt;?php get_footer() ?>
+						</code>
+					</pre>
+				</section>
+
+				<section class="results caseStudy">
+					<picture>
+						<source srcset="../images/wordpressLanding2.avif" />
+						<source srcset="../images/wordpressLanding2.webp" />
+						<img
+							src="../images/wordpressLanding2.jpg"
+							alt="Gather In Taste Home Page"
+							width="100%" />
+					</picture>
+					<div class="caseStudyText">
+						<h2>Building Pages and Plugins</h2>
+						<p>
+							A few things to point out, is I did end up installing a handful of
+							plugins, things like Contact Form 7, Flamingo, Honeypot, WP New
+							and Scrolling, and wooComerce all to better understand how the
+							wordpress plugins worked. After several weeks of working on it, it
+							was at the point where there wasn't much more to do. As a fake
+							site and business It didn't need to look perfect, but function
+							properly. Expo Parties can be found live at this Address:
+							http://34.214.21.202/
+						</p>
+					</div>
+				</section>
+
+				<section class="results caseStudy">
+					<div class="caseStudyText">
+						<h2>Second Project: Gather In Taste</h2>
+						<p>
+							But that wasn't all, after I was done with that, there was one
+							more page that I wanted to build, another business site with a
+							very basic layout with minimal functionality. This one for Gather
+							In Taste. A real business that my aunt was working on getting
+							started. From what I learned with Expo Gaming parties, I threw
+							together a simple design that had all the necessary features for
+							what she was looking for. Shortly there after, there wasn't much
+							effort put into it for the business perspective and the page never
+							went public nor was it refined. Here is the site today:
+							<a href="http://34.214.21.202/">http://34.214.21.202/</a>
+						</p>
+					</div>
+					<picture>
+						<source srcset="../images/wordpressLanding.avif" />
+						<source srcset="../images/wordpressLanding.webp" />
+						<img
+							src="../images/wordpressLanding.jpg"
+							alt="Gather In Taste Home Page"
+							width="100%" />
+					</picture>
+				</section>
+
+				<section class="nextTime caseStudy">
+					<div class="caseStudyText">
+						<h2>Reflections and Future Improvements</h2>
+						<p>
+							If I could go back, I would want to refine both of these sites a
+							little more with the further knowledge that I've learned. I think
+							both of there overall design is very simple and could use a little
+							more variety and color. But overall the purpose of these 2
+							projects wasn't to make a stylish page, but to understand how to
+							implement a custom theme into wordpress. Do I wish my theme was a
+							little more comprehensive, yes, yes I do, and maybe one day I will
+							go back and fix it.
+						</p>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<div id="footerWrapper">
+			<footer>
+				<p class="legal">
+					Copyright &copy; <span id="year"></span> | Adam Foerster Inc. | All
+					rights reserved
+				</p>
+			</footer>
+		</div>
+	</body>
+	<script src="../js/scripts.js" type="module"></script>
+</html>
