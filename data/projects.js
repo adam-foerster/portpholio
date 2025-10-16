@@ -55,6 +55,27 @@ const projects = [
 		img: "./images/wordpressLanding",
 		url: "./caseStudies/wordpress.html",
 	},
+	{
+		id: 8,
+		title: "Learning SVELTE",
+		description: "Coming Soon",
+		img: null,
+		url: null,
+	},
+	{
+		id: 9,
+		title: "Tailwind CSS",
+		description: "Coming Soon",
+		img: null,
+		url: null,
+	},
+	{
+		id: 10,
+		title: "The Gail Halverson Project (The Candy Bomber)",
+		description: "Coming Soon",
+		img: null,
+		url: null,
+	},
 ];
 
 export default projects;

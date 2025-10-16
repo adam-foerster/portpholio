@@ -434,6 +434,10 @@ section#five {
 			box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 		}
 	}
+	.btn.disabled {
+		pointer-events: none;
+		opacity: 0.6;
+	}
 }
 
 section#six {

@@ -11,14 +11,16 @@ projects.forEach((project) => {
 	card.classList.add("card");
 	card.innerHTML = `
     <picture>
-		<source srcset="${project.img}.avif"/>
-		<source srcset="${project.img}.webp"/>
-		<img src="${project.img}.jpg"/>
+		<source srcset="${project.img || "./images/placeholder"}.avif"/>
+		<source srcset="${project.img || "./images/placeholder"}.webp"/>
+		<img src="${project.img || "./images/placeholder"}.jpg"/>
 	</picture>
     <div class="content">
         <h3 class='name'>${project.title}</h3>
         <p class='description'>${project.description}</p>
-        <a href="${project.url}" target="_self" class="btn">View Project</a>
+        <a href="${project.url || "#five"}" target="_self" class="btn ${
+		project.url === null ? "disabled" : ""
+	}">${project.url === null ? "Coming Soon" : "View Project"}</a>
     </div>
     `;
 	projectsContainer.appendChild(card);
