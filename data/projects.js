@@ -76,6 +76,13 @@ const projects = [
 		img: null,
 		url: null,
 	},
+	{
+		id: 11,
+		title: "Server Based Typescript Todo's",
+		description: "Coming Soon",
+		img: null,
+		url: null,
+	},
 ];
 
 export default projects;
